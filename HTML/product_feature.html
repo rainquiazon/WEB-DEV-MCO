@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Character Feature: Flins</title>
+  <link rel="stylesheet" href="product_feature.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav>
+      <div class="header-nav">
+        <p>My Website</p>
+        <ul class="nav-menu">
+          <li><a href="product_feature.html">Product Page</a></li>
+          <li><a href="product_gallery.html">Product Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button onclick="switchPage('rain.html')" class="nav-btn">Rain's Resume</button></li>
+          <li><button onclick="switchPage('index.html')" class="nav-btn">Third's Resume</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="imgprj/flinsss.jpg" alt="Flins hero image">
+    <h1>Flins</h1>
+  </section>
+
+  <!-- About the Character -->
+  <section class="about">
+    <h2>About Flins</h2>
+    <p><strong>Full Name:</strong> Kyryll Chudomirovich Flins</p>
+    <p><strong>Title:</strong> Shadowy Lights, Stranger Wights</p>
+    <p><strong>Region / Affiliation:</strong> Nod-Krai, Lightkeepers</p>
+    <p><strong>Vision (Element):</strong> Electro</p>
+    <p><strong>Weapon Type:</strong> Polearm</p>
+    <p><strong>Rarity:</strong> ★★★★★ (5-Star)</p>
+    <p><strong>Release Date:</strong> September 30, 2025 (Version 6.0 Phase 2)</p>
+  </section>
+
+  <!-- Character Features -->
+  <section class="features">
+    <h2>Features & Abilities</h2>
+    <ul>
+      <li><strong>Elemental Skill:</strong> Infuses his polearm with Electro, causing Normal and Charged Attacks to deal Electro damage.</li>
+      <li><strong>Elemental Burst:</strong> Unleashes a powerful AoE Electro attack. Some of its damage is “Lunar-Charged.”</li>
+      <li><strong>Lore:</strong> A Lightkeeper who watches over a lighthouse and graveyard in Nod-Krai. Known for his refined manners and tragic past.</li>
+      <li><strong>Constellation:</strong> Laterna Vigilis</li>
+    </ul>
+  </section>
+
+  <!-- Photo Gallery -->
+<!-- Photo Gallery -->
+<section class="gallery">
+  <h2>Photo Gallery</h2>
+  <div class="gallery-images">
+    <div>
+      <img src="imgprj/flinspose.jpg" alt="Flins pose 1">
+      <p>Flins – Standard Pose</p>
+    </div>  
+
+    <div>
+      <img src="imgprj/abs.jpg" alt="Flins ability view">
+      <p>Flins using Electro Ability</p>
+    </div>
+
+    <div>
+      <img src="imgprj/weap.jpg" alt="Flins story art">
+      <p>Flins Story Artwork</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer with Contact -->
+  <footer>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <p>&copy; 2025 Genshin Impact Fan Site</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
