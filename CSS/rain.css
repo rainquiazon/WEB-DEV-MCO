@@ -1,0 +1,318 @@
+/* Remove default space around the page and set a nice font and background color */
+body {
+  margin: 0; /* No space around page edges */
+  font-family: Arial, Helvetica, sans-serif; /* Use these fonts */
+  background-color: #e9dddd; /* Light pinkish background */
+}
+
+/* === NAVIGATION STYLES === */
+
+/* Header stays visible at top when you scroll */
+header {
+  margin: 10px; /* Add a little space around the header */
+  position: sticky; /* Keep it stuck on the screen */
+  top: 10px; /* Stay 10px from the top */
+  z-index: 1000; /* Make sure it's on top of other stuff */
+}
+
+/* Navigation bar styles */
+.header-nav {
+  display: flex; /* Put items in a row */
+  justify-content: space-between; /* Spread out items to edges */
+  align-items: center; /* Center items vertically */
+  padding: 15px 30px; /* Space inside the bar */
+  background-color: black; /* Black background */
+  color: #ecf0f1; /* Light colored text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nice fonts */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slight shadow under nav */
+  position: sticky;
+  top: 0;
+}
+
+/* Style for the website title text */
+.header-nav p {
+  font-size: 1.8rem; /* Make text bigger */
+  font-weight: 700; /* Bold text */
+  margin: 0; /* No extra space around */
+}
+
+/* Navigation menu container */
+.nav-menu {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Put links in a row */
+  gap: 20px; /* Space between links */
+  margin: 0; /* No outside margin */
+  padding: 0; /* No inside padding */
+}
+
+/* Each navigation item */
+.nav-menu li {
+  display: flex; /* Make item a flex container */
+  align-items: center; /* Center vertically */
+}
+
+/* Links inside the menu */
+.nav-menu a {
+  color: #ecf0f1; /* Light text color */
+  text-decoration: none; /* No underline */
+  font-weight: 500; /* Medium bold */
+  padding: 8px 12px; /* Clickable space */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Change background when hovering over links */
+.nav-menu a:hover {
+  background-color: #34495e; /* Dark gray-blue background */
+}
+
+/* Style for buttons in navigation */
+.nav-btn {
+  background-color: #2980b9; /* Blue button */
+  border: none; /* No border */
+  color: #ecf0f1; /* Light text */
+  padding: 8px 14px; /* Space inside button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: 600; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth hover */
+}
+
+/* Button hover color */
+.nav-btn:hover {
+  background-color: #1c5980; /* Darker blue */
+}
+
+/* === WELCOME SECTION === */
+
+/* Center welcome text and add space around it */
+.welcome {
+  text-align: center; /* Center the text */
+  margin: 40px 20px; /* Space around section */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fancy font */
+}
+
+/* === SELF INTRODUCTION SECTION === */
+
+/* Layout for intro: image and text side by side */
+.intro {
+  display: flex; /* Put children in a row */
+  flex-direction: row; /* Left to right */
+  align-items: flex-start; /* Align top edges */
+  justify-content: center; /* Center horizontally */
+  margin: 40px 20px; /* Space outside */
+  gap: 40px; /* Space between image and text */
+}
+
+/* Style for profile image */
+.intro img {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Keep image shape, crop if needed */
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Text box next to image */
+.intro-message {
+  margin-top: 20px; /* Space on top */
+  background: rgb(31, 29, 29); /* Dark background */
+  padding: 20px; /* Inside space */
+  width: 60%; /* Take up most of the row */
+  border-radius: 12px; /* Rounded corners */
+  text-align: justify; /* Justify text edges */
+  color: wheat; /* Light yellow text */
+  font-size: 20px; /* Bigger text */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Clean font */
+}
+
+/* === SKILLS & HOBBIES SECTION === */
+
+/* Space above and below skills section, light text */
+.skills-hobbies {
+  padding: 40px 0; /* Top and bottom padding */
+  color: white; /* White text */
+}
+
+/* Box around each hobby */
+.hobby-block {
+  background: black; /* Black background */
+  width: 95%; /* Almost full width */
+  padding: 20px; /* Inside space */
+  border-radius: 20px; /* Rounded corners */
+  margin: 0 auto 25px auto; /* Center horizontally and add bottom space */
+}
+
+/* Layout hobby content side by side */
+.hobby-item {
+  display: flex; /* Put children in a row */
+  align-items: flex-start; /* Align top edges */
+  gap: 30px; /* Space between items */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+/* Hobby image on left */
+.hobby-left img {
+  width: 180px; /* Fixed width */
+  height: 180px; /* Fixed height */
+  border-radius: 20px; /* Rounded corners */
+  object-fit: cover; /* Crop to fit */
+  margin-bottom: 10px; /* Space below image */
+}
+
+/* Hobby title text */
+.hobbies-names {
+  font-weight: bold; /* Bold text */
+  font-size: 25px; /* Big text */
+  color: wheat; /* Light yellow */
+  margin-bottom: 10px; /* Space below */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Serif font */
+  text-align: center; /* Center text */
+}
+
+/* Hobby description on right */
+.hobby-right {
+  flex: 1; /* Take remaining space */
+  display: flex; /* Flex container */
+  align-items: center; /* Center vertically */
+  color: wheat; /* Light yellow text */
+  text-align: justify; /* Justify text */
+  font-size: 20px; /* Bigger text */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Serif font */
+}
+
+/* === CALENDAR SECTION === */
+
+/* Center calendar container and space below */
+.calendar-wrapper {
+  text-align: center; /* Center content */
+  margin-bottom: 30px; /* Space below */
+}
+
+/* Style for calendar table */
+.calendar {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Max width */
+  margin: 0 auto 20px auto; /* Center and space below */
+  border-collapse: collapse; /* Remove gaps between cells */
+}
+
+/* Borders and padding for table cells and headers */
+.calendar th,
+.calendar td {
+  border: 1px solid #ccc; /* Light border */
+  padding: 8px; /* Space inside cells */
+}
+
+/* Table header style */
+.calendar th {
+  background-color: #222; /* Dark background */
+  color: white; /* White text */
+}
+
+/* Normal day cells */
+.calendar td {
+  background: rgb(31, 29, 29); /* Dark background */
+  color: white; /* White text */
+  font-weight: normal; /* Normal weight */
+}
+
+/* Special days style */
+.calendar td[style] {
+  background-color: red; /* Red background */
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+}
+
+/* === WEB PROJECTS SECTION === */
+
+/* Space above web projects */
+.web-container {
+  margin-top: 50px; /* Space above */
+}
+
+/* Card for each project */
+.web-block {
+  background-color: #f5f0e1; /* Light cream background */
+  max-width: 600px; /* Max width */
+  margin: 30px auto; /* Center and space */
+  padding: 20px; /* Inside space */
+  border-radius: 15px; /* Rounded corners */
+  text-align: center; /* Center text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Project images */
+.web-block img {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Max width */
+  height: auto; /* Maintain ratio */
+  border-radius: 12px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below image */
+}
+
+/* Project description text */
+.web-block p {
+  font-size: 16px; /* Normal text size */
+  line-height: 1.6; /* Space between lines */
+  color: #555; /* Dark gray text */
+  text-align: justify; /* Justify text edges */
+}
+
+.github-activities {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Heading centered */
+.github-activities h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #212529;
+}
+
+/* List style with disc */
+.github-activities ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Spacing between list items */
+.github-activities li {
+  margin-bottom: 10px;
+}
+
+/* Links style */
+.github-activities a {
+  color: #007bff; /* Bootstrap blue */
+  text-decoration: none;
+}
+
+/* Underline links on hover */
+.github-activities a:hover {
+  text-decoration: underline;
+}
+
+/* === FOOTER SECTION === */
+
+/* Footer background and text */
+footer {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  text-align: center; /* Center text */
+  padding: 20px 0; /* Space above and below */
+  margin-top: 60px; /* Space above footer */
+  font-size: 14px; /* Smaller text */
+}
+
+/* Footer links style */
+footer a {
+  color: lightblue; /* Light blue text */
+  text-decoration: none; /* No underline */
+}
+
+/* Footer links hover effect */
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

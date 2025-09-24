@@ -1,0 +1,168 @@
+/* --- Basic Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* --- Header Navigation --- */
+.header-nav {
+  display: flex; /* Put items in a row */
+  justify-content: space-between; /* Spread out items to edges */
+  align-items: center; /* Center items vertically */
+  padding: 15px 30px; /* Space inside the bar */
+  background-color: black; /* Black background */
+  color: #ecf0f1; /* Light colored text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nice fonts */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slight shadow under nav */
+  position: fixed; /* 🔑 sticky instead of fixed */
+  top: 0;           /* dumikit sa taas */
+  width: 100%;      /* para buong lapad */
+  z-index: 9999;    /* para laging nasa ibabaw */
+}
+
+
+.header-nav p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+
+}
+
+.nav-menu li {
+  margin-left: 15px;
+}
+
+.nav-menu li a,
+.nav-menu li button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-menu li a:hover,
+.nav-menu li button:hover {
+  background-color: #495057;
+}
+
+/* --- Gallery Grid Section --- */
+.gallery {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  width: 23%; 
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+  display: flex;        /* para ma-control loob */
+  flex-direction: column; /* patayo arrangement */
+}
+.item img {
+  width: 100%;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.item button {
+  margin-top: auto;   /* laging sa pinakababa */
+  padding: 8px 12px;
+  background-color: #343a40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #495057;
+}
+
+/* --- Contact Form --- */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.contact label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.contact input,
+.contact textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.contact textarea {
+  min-height: 80px;
+}
+
+.contact button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #343a40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact button:hover {
+  background-color: #495057;
+}
+
+/* --- Footer Text --- */
+footer p {
+  text-align: center;
+  color: #777;
+  padding: 1rem 0 2rem;
+  font-size: 0.9rem;
+}
